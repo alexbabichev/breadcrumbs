@@ -1,0 +1,31 @@
+.breadcrumb {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &-item {
+    display: inline;
+
+    &:not(:last-child)::after {
+      content: '>';
+      display: inline-block;
+      margin: 0 8px;
+      color: transparent;
+
+      background-image: url('http://www.werethewylies.com/img/arrow.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center bottom 2px;
+
+      opacity: 0.5;
+    }
+  } 
+
+  a {
+    text-decoration: none;
+    &[href] {
+      color: rgb(64, 124, 177);
+    }
+    
+  }
+}
